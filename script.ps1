@@ -16,10 +16,10 @@ Get-Random -InputObject $NameList
 New-AzResourceGroup -Name $rgname -Location $location
 Write-Host "Press any key to continue..."
 
-New-AzResourceGroupDeployment -ResourceGroupName $rgname -TemplateUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/keyvault.json -TemplateParameterUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/keyvault.parameters.json
+New-AzResourceGroupDeployment -ResourceGroupName $rgname -TemplateUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/keyvault.template.json -TemplateParameterUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/keyvault.parameters.json
 Write-Host "Press any key to continue..."
 
-New-AzResourceGroupDeployment -ResourceGroupName $rgname -TemplateUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/webapp.json -TemplateParameterUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/webapp.parameters.json
+New-AzResourceGroupDeployment -ResourceGroupName $rgname -TemplateUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/webapp.template.json -TemplateParameterUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/webapp.parameters.json
 Write-Host "Press any key to continue..."
 
-New-AzResourceGroupDeployment -ResourceGroupName $rgname -TemplateUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/insights.json -TemplateParameterUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/insights.parameters.json
+New-AzResourceGroupDeployment -ResourceGroupName $rgname -TemplateUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/insights.template.json -TemplateParameterUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/insights.parameters.json
