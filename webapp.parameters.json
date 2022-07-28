@@ -1,0 +1,26 @@
+
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "webAppName": {
+        "value": "[concat('webapp-daniel-', uniqueString(resourceGroup().location))]"
+      },
+      "sku": {
+        "value": "S1"
+      },
+      "linuxFxVersion": {
+        "value": "PYTHON:3.9",
+        "metadata": {
+          "description": "The Runtime stack of current web app"
+        }
+      },
+      "location": {
+        "value": "westus3",
+        "metadata": {
+          "description": "Location for all resources."
+        }
+    },
+    "dburi": {"reference": {"keyVault": {"id": }}}
+  }
+}

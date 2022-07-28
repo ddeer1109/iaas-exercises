@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "keyVaultName": {
+        "value": "GEN-UNIQUE"
+      },
+      "objectId": {
+        "value": "ededb43f-30ab-48ef-a73d-f43a732deb5b"
+      },
+      "secretName": {
+        "value": "dbUri"
+      },
+      "secretValue": {
+        "value": "GEN-UNIQUE"
+      },
+      "enabledForTemplateDeployment": {
+        "value": true
+      }
+    }
+  }
