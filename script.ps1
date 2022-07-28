@@ -15,6 +15,6 @@ Get-Random -InputObject $NameList
 
 New-AzResourceGroup -Name $rgname -Location $location
 
-New-AzResourceGroupDeployment -ResourceGroupName $rgname -TemplateUri ./keyvault.json -TemplateParameterUri ./keyvault.parameters.json
-New-AzResourceGroupDeployment -ResourceGroupName $rgname -TemplateUri ./webapp.json -TemplateParameterUri ./webapp.parameters.json
-New-AzResourceGroupDeployment -ResourceGroupName $rgname -TemplateUri ./insights.json -TemplateParameterUri ./insights.parameters.json
+New-AzResourceGroupDeployment -ResourceGroupName $rgname -TemplateUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/keyvault.json -TemplateParameterUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/keyvault.parameters.json
+New-AzResourceGroupDeployment -ResourceGroupName $rgname -TemplateUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/webapp.json -TemplateParameterUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/webapp.parameters.json
+New-AzResourceGroupDeployment -ResourceGroupName $rgname -TemplateUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/insights.json -TemplateParameterUri https://raw.githubusercontent.com/ddeer1109/iaas-exercises/main/insights.parameters.json
