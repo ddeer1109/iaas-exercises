@@ -21,6 +21,6 @@
           "description": "Location for all resources."
         }
     },
-    "dburi": {"reference": {"keyVault": {"id": "/subscriptions/e87adb3c-303f-4d96-9a19-8de86111b923/resourceGroups/new-rg-1/providers/Microsoft.KeyVault/vaults/am-kv-1"}}}
+    "dburi": {"reference": {"secretName": "dbUri", "keyVault": {"id": "/subscriptions/e87adb3c-303f-4d96-9a19-8de86111b923/resourceGroups/new-rg-1/providers/Microsoft.KeyVault/vaults/am-kv-1"}}}
   }
 }
